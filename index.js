@@ -3,7 +3,7 @@ import { configDotenv } from 'dotenv'; configDotenv()
 
 const browser = await chromium.launchServer({
     headless: true,
-    port: process.env.PORT,
+    port: 3501,
     wsPath: process.env.HOST
 })
 
